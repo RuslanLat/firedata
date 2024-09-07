@@ -8,7 +8,7 @@
    1.1 [Презентация](presentation.pptx) ![Ready](https://img.shields.io/badge/-ready-green) \
    1.2 [Скринкаст](https://disk.yandex.ru/i/Kr-wKpYDoDQ14A) работы WEB сервиса ![Ready](https://img.shields.io/badge/-ready-green) \
    1.3 [Web сервис](https://github.com/RuslanLat/firedata/tree/main/streamlit_app) ![Ready](https://img.shields.io/badge/-ready-green) \
-   1.4 [Модель](https://github.com/RuslanLat/firedata/tree/main/mlmodel) ![Ready](https://img.shields.io/badge/-ready-green) \
+   1.4 [Модель](https://github.com/RuslanLat/firedata/tree/main/mlmodel) ![Ready](https://img.shields.io/badge/-ready-green)
 
 2. Ссылка на сервис
 
@@ -24,7 +24,7 @@
 - Перейти по ссылке указанной в выводе терминала после запуска сервиса
 - Для остановки работы сервиса выполнить команду в терминале сочетания клавиш Ctrl + C
 
-![qrcode](streamlit_app/images/qr-code.gif)
+![qrcode](images/qr-code.gif)
 
 ## Команда "ЛИФТ"
 
