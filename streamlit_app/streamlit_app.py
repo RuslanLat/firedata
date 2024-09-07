@@ -33,8 +33,7 @@ if submitted and uploaded_file:
         green = src.read(2)  # B03 - Green
         blue = src.read(3)  # B04 - Red
         ik = src.read(4)
-        mask = src.read(5)
-        df = pd.DataFrame(src.read(1).reshape(-1, 1))
+        df = pd.DataFrame(red.reshape(-1, 1))
         df.columns = ["band1"]
         for i in range(2, 5):
             df[f"band{i}"] = src.read(i).reshape(-1, 1)
@@ -49,7 +48,7 @@ if submitted and uploaded_file:
     img = np.array([1 if i > 0.45 else 0 for i in res]).reshape(test_shape)
     photo_full = np.stack([red, green, blue], axis=-1)  # Отрисовка всего изображения
     photo_ik = np.stack([ik], axis=-1)  # Отрисовка ИК-слоя изображения
-    photo_mask = np.stack([mask], axis=-1)  # Отрисовка маски изображения
+    photo_mask = np.stack([img], axis=-1)  # Отрисовка маски изображения
 
     photo_full = photo_full.astype(np.uint8)
     photo_ik = photo_ik.astype(np.uint8)
