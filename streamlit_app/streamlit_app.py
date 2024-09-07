@@ -17,9 +17,16 @@ model.load_model("streamlit_app/firemlmodel.json", format="json")
 
 st.subheader("🌳 Сервис сегментирования изображения заданной территории")
 
-tiff_form = st.form("rosatom")
+tiff_form = st.form("firedata")
 uploaded_file = tiff_form.file_uploader(
     "Загрузка файла", type=["tiff"], help="загрузите файл"
+)
+prop = tiff_form.slider(
+    "Уровень доверия к модели, %",
+    min_value=0.0,
+    max_value=1.0,
+    value=0.45,
+    help="Выбирете порог",
 )
 submitted = tiff_form.form_submit_button("Сегментировать территорию", type="primary")
 if submitted and uploaded_file:
@@ -45,7 +52,7 @@ else:
 
 if submitted and uploaded_file:
     res = model.predict_proba(df)[:, 1]
-    img = np.array([1 if i > 0.45 else 0 for i in res]).reshape(test_shape)
+    img = np.array([1 if i > prop else 0 for i in res]).reshape(test_shape)
     photo_full = np.stack([red, green, blue], axis=-1)  # Отрисовка всего изображения
     photo_ik = np.stack([ik], axis=-1)  # Отрисовка ИК-слоя изображения
     photo_mask = np.stack([img], axis=-1)  # Отрисовка маски изображения
