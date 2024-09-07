@@ -1,0 +1,8 @@
+pandas
+rasterio
+matplotlib
+xlrd
+catboost
+scikit-learn
+ipywidgets
+streamlit
