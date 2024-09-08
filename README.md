@@ -10,8 +10,8 @@
    1.1 [Презентация](presentation.pptx) ![Ready](https://img.shields.io/badge/-ready-green) \
    1.2 [Скринкаст](https://disk.yandex.ru/i/Kr-wKpYDoDQ14A) работы WEB сервиса ![Ready](https://img.shields.io/badge/-ready-green) \
    1.3 [Web сервис](https://github.com/RuslanLat/firedata/tree/main/streamlit_app) ![Ready](https://img.shields.io/badge/-ready-green) \
-   1.4 [Модель](https://github.com/RuslanLat/firedata/tree/main/mlmodel) ![Ready](https://img.shields.io/badge/-ready-green)
-   1.5. [Анализ данных](eda.ipynb)
+   1.4 [Модель](https://github.com/RuslanLat/firedata/tree/main/mlmodel) ![Ready](https://img.shields.io/badge/-ready-green) \
+   1.5. [Анализ данных](eda.ipynb) ![Ready](https://img.shields.io/badge/-ready-green)
 
 2. Финальная версия обучения модели и пайплайн предсказания для новых данных
 
