@@ -4,17 +4,24 @@
 
 ## Задача №05 ["Предиктивная оценка возникновения лесных пожаров"](https://hacks-ai.ru/events/1077378)
 
+[Постановка задачи](task.pdf)
+
 1. **Навигация** по проекту \
    1.1 [Презентация](presentation.pptx) ![Ready](https://img.shields.io/badge/-ready-green) \
    1.2 [Скринкаст](https://disk.yandex.ru/i/Kr-wKpYDoDQ14A) работы WEB сервиса ![Ready](https://img.shields.io/badge/-ready-green) \
    1.3 [Web сервис](https://github.com/RuslanLat/firedata/tree/main/streamlit_app) ![Ready](https://img.shields.io/badge/-ready-green) \
    1.4 [Модель](https://github.com/RuslanLat/firedata/tree/main/mlmodel) ![Ready](https://img.shields.io/badge/-ready-green)
+   1.5. [Анализ данных](eda.ipynb)
 
-2. Ссылка на сервис
+2. Финальная версия обучения модели и пайплайн предсказания для новых данных
+
+[Ноутбук с кодом](mlmodel/mlmodel_v3.ipynb)
+
+3. Ссылка на сервис
 
 - Web сервис [https://firedata.streamlit.app/](https://firedata.streamlit.app/)
 
-3. Для локального использования WEB-приложения:
+4. Для локального использования WEB-приложения:
 
 - Загрузить все файлы репозитория firedata или выполнить команду в терминале `git clone https://github.com/RuslanLat/firedata`
 - Создать виртуальную среду - в директории с проектом в терминале выполнить команду python -m venv ./venv
